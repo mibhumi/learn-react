@@ -7,7 +7,7 @@ import showResults from './showResults';
 const ShowForm = () => {
 	return(
 	<div className="container">
-	    <h2>Register yourself</h2>
+	    <h2>Registration Form</h2>
 	    <RegistrationForm onSubmit={showResults} />
 	</div>
 	);

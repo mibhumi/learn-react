@@ -16,7 +16,6 @@
 .menu_list li {
 	width: 100px;
 	display: flex;
-	justify-content: center;
 	align-items: center;
 }
 
@@ -28,4 +27,17 @@
 
 .menu_list:active {
 	color: #ff0000;
+}
+
+.btnRegister {
+	margin-top: 10px;
+}
+
+.btnRegister a {
+	background-color: #1b4565;
+	width: 10%;
+	color: #ffffff;
+	text-decoration: none;
+	border-radius: 3px;
+	padding: 6px;
 }
