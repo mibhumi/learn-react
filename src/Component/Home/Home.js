@@ -1,12 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Bar } from 'react-chartjs-2';
 
-class Home extends Component {
-
-    constructor(props) {
-        super( props );
-	this.state = {
-	    chartData: {
+const data = {
 	    labels: ['Boston', 'Worcester', 'Springfield', 'Lowell', 'Cambridge', 'New Bedford'],
 		datasets:[
 		{
@@ -30,21 +25,16 @@ class Home extends Component {
 		}
 	    ]
 	}
-	}
-    }
 
-    render() {
-	return (
+const Home = () => {
+	return(
 	    <div className='chart'>
 		<Bar
-		    data={this.state.chartData}
-		    options={{
-			maintainAspectRatio: false
-		    }}
+		    data={data}
+		    options={{ maintainAspectRatio: false }}
 		/>
 	    </div>
-	)
-    }
+	);
 }
 
 export default Home;
